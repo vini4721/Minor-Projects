@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", serif;
+}
+
+/* Header */
+
+.header-wpr {
+    display: flex;
+    background-color: #2275e3;
+}
+
+.arrow {
+    padding: 17.6px 0 17.6px 16px;
+}
+
+.arrow img {
+    height: 20px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 6px 0 6px 0;
+}
+
+.payment {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.zxy {
+    padding-top: 3px;
+    font-size: 11px;
+    color: white;
+}
+
+/* main body */
+
+.sub-heading {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box {
+    outline: solid 1px rgb(227, 222, 222);
+    margin: 0 20px 0 20px;
+    box-shadow: 0 10px 15px rgb(233, 229, 229);
+    border-radius: 10px;
+}
+
+.detail-box {
+    display: flex;
+    margin: 0 16px 30px 16px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.details :first-child {
+    padding: 16px 23px 4px 23px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    object-fit: contain;
+    color: #777;
+}
+
+.details :nth-child(2) {
+    flex-grow: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Timeline */
+
+.timeline {
+    margin: 26px 16px 16px 16px;
+}
+
+.timeline-items {
+    display: flex;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 10px);
+    height: 2px;
+    background: #4CAF50;
+    top: 10px;
+    left: calc(50% + 10px);
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    flex-grow: 1;
+}
+
+.text-status {
+    height: 20px;
+    color: #4CAF50;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text-date {
+    font-size: 11px;
+    color: #777;
+}
+
+.divider {
+    border: solid 1px rgb(244, 240, 240);
+}
+
+.payment-history {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    align-self: stretch;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1f87dc;
+}
+
+.faq-box {
+    margin: 0 20px 0 20px;
+}
+
+.faq-box summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 16px 0;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: solid 1px rgb(238, 234, 234);
+}
+
+.faq-box summary::after {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/77e2a543-9f1e-42d7-b391-7d8a191a8781.svg");
+}
+
+.faq-box summary:active::after{
+    transform: rotate(180deg);
+}
+
+.faq-box p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.confirmation {
+    margin: 16px 20px 20px 20px;
+    background-color: #f5f8ff;
+    border-radius: 10px;
+}
+
+.confirmation p {
+    padding: 20px 20px 0px 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 20px 20px 0;
+}
+
+.rating img {
+    margin-left: 14px;
+}
+
+.rating span {
+    font-family: Poppins;
+    font-size: 11px;
+    color: #777;
+}
+
+.feedback {
+    background-color: #e9e6e6;
+    /* height: 133px; */
+}
+
+.feedback>span {
+    display: inline-block;
+    padding: 20px 0 18px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.yes-no {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    padding-bottom: 20px;
+}
+
+.yes::before {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/e0ba1080-f31b-438e-bec3-4cb2a1ff3851.svg");
+    position: absolute;
+}
+
+.yes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 10px 10px 12px;
+}
+
+.yes span {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.yes :first-child {
+    font-weight: bold;
+    color: #56aa7a;
+}
+
+.no::before {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/63002126-ea56-4d18-ada7-242a32fbb877.svg");
+    position: absolute;
+}
+
+.no {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 10px 10px 12px;
+}
+
+.no span {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.no :first-child {
+    font-weight: bold;
+    color: #eb5647;
+}
