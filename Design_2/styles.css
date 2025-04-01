@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", serif;
+}
+
+.header-wpr {
+    display: flex;
+    align-items: center;
+}
+
+.header-wpr img {
+    padding: 17px 0 16px 20px;
+}
+
+.header-wpr :last-child {
+    padding-right: 45px;
+}
+
+.header-wpr :nth-child(2) {
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #414e5a;
+}
+
+.second-bar {
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px rgb(226, 218, 218);
+    border-bottom: solid 1px rgb(226, 218, 218);
+    position: relative;
+}
+
+.place::after {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/4BFBBF2E-A3FE-4E64-B386-E8B7137D309F.svg");
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 1px;
+    padding-right: 20px;
+}
+
+.place:hover::after {
+    transform: rotateX(180deg);
+}
+
+.place summary {
+    list-style: none;
+}
+
+.place {
+    margin: 12px 20px 12px 20px;
+}
+
+.place :first-child,
+.place p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1b1d;
+}
+
+.second-bar span {
+    font-size: 12px;
+    padding: 0 0 12px 20px;
+    color: #788898;
+}
+
+.sync-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(226, 218, 218);
+    margin: 0 20px 0 20px;
+    padding: 20px 0 20px 0;
+    position: relative;
+}
+
+.sync-add :first-child {
+    font-size: 12px;
+    color: #111;
+    padding-left: 30px;
+}
+
+.sync-add :nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    color: #0076d7;
+}
+
+.sync-add :hover:nth-child(2) {
+    color: rgb(21, 21, 83);
+}
+
+.sync-add :first-child::before {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/F4ECF4B6-AB41-4CF7-8872-E5581C1489BE.svg");
+    position: absolute;
+    left: 5px;
+}
+
+/* Calendar */
+
+.calendar {
+    border-bottom: solid 1px rgb(226, 218, 218);
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 25px 20px;
+}
+
+#month-year {
+    border: none;
+    appearance: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #363d43;
+}
+
+.month-year::after {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/96BF4402-EFFC-48F6-BFF5-1D3F62738F1E.svg");
+    position: absolute;
+}
+
+.today-week-custom {
+    display: flex;
+    align-items: center;
+}
+
+.today-week-custom span {
+    font-size: 12px;
+    color: #414e5a;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.today-week-custom span:not(:last-child) {
+    margin-right: 20px
+}
+
+.today-week-custom span:hover {
+    color: #00a8ff;
+}
+
+.today-week-custom :first-child::after {
+    height: 2px;
+    content: '';
+    background-color: #0076D7;
+    width: 50%;
+    left: 25%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px;
+}
+
+.today-week-custom::after {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/5C3D55F0-C9A7-4210-8844-CA57B3A1E285.svg");
+    position: relative;
+    bottom: 2px;
+}
+
+.days {
+    display: flex;
+    margin: 0 20px 12px 20px;
+}
+
+.days span {
+    display: block;
+    flex: 1;
+    font-size: 11px;
+    color: #788898;
+    text-align: center;
+}
+
+.dates {
+    display: flex;
+    margin: 0 20px 20px 20px;
+}
+
+.dates span {
+    display: block;
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #363d43;
+}
+
+.dates span:hover {
+    background-color: #1274c0;
+    color: white;
+    border-radius: 50px;
+}
+
+.appointments {
+    border: solid 1px white;
+    position: relative;
+}
+
+.icon-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 15px 20px;
+}
+
+.icon-date :first-child {
+    font-size: 12px;
+    font-weight: 600;
+    color: #414e5a;
+    padding-left: 25px;
+}
+
+.icon-date :first-child::before {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/5DA0370A-040A-4876-B3ED-2CC8A1089488.svg");
+    position: absolute;
+    left: 20px;
+    bottom: 14px;
+}
+
+.icon-date span+span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #788798;
+    margin-left: 7.5rem;
+}
+
+.toggle-button{
+    width: 50px;
+}
+
+.toggle-button input {
+    display: none;
+}
+
+.toggle-button label {
+    display: block;
+    height: 25px;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    position: relative;
+    transition: background 300ms linear;
+}
+
+.toggle-button label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translateY(10%);
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50px;
+    transition: background 300ms linear;
+}
+
+.toggle-button input:checked+label {
+    background-color: rgb(100, 163, 240);
+}
+
+.toggle-button input:checked+label::before {
+    left: 27px;
+}
+
+.box1 {
+    display: flex;
+    border: solid 1px rgb(226, 218, 218);
+    border-radius: 10px;
+    margin: 10px 20px 10px 20px;
+    position: relative;
+}
+
+.box1::after {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/BD3E0BA1-DFF2-40E9-BB6A-568513840B2C.svg");
+    position: absolute;
+    right: 10px;
+    top: 23px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 15px 15px;
+}
+
+.time span {
+    font-size: 14px;
+    text-align: right;
+    color: #414e5a;
+}
+
+.time :first-child {
+    padding-bottom: 5px;
+}
+
+.name-number {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+}
+
+.name-number :first-child {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: #1a1b1d;
+    padding-bottom: 5px;
+}
+
+.name-number :nth-child(2) {
+    font-size: 12px;
+    text-align: left;
+    color: #788898;
+}
+
+.custom-box {
+    border: solid 1px;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    border: solid 1px rgb(226, 218, 218);
+}
+
+.consultation {
+    padding: 15px 0 15px 45px;
+    position: relative;
+}
+
+.consultation span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #414e5a;
+}
+
+.consultation::before {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/F4ECF4B6-AB41-4CF7-8872-E5581C1489BE.svg");
+    position: absolute;
+    left: 20px;
+    top: 18px;
+}
+
+.time-name-number {
+    display: flex;
+    margin: 10px 8px 10px 15px;
+    position: relative;
+}
+
+.time-name-number::after {
+    content: url("https://cdn.zeplin.io/5e384948712997b0a5b102e3/assets/BD3E0BA1-DFF2-40E9-BB6A-568513840B2C.svg");
+    position: absolute;
+    right: 1px;
+    bottom: 25px;
+}
+
+.custom-time {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.custom-time span {
+    font-size: 14px;
+    text-align: right;
+    color: #414e5a;
+}
+
+.custom-name-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-name-number :first-child {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: #1a1b1d;
+    padding-bottom: 5px;
+}
+
+.custom-name-number :last-child {
+    font-size: 12px;
+    text-align: left;
+    color: #788898;
+}
+
+footer {
+    margin-top: 70px;
+    border-top: solid 1px rgb(226, 218, 218);
+    border-bottom: solid 1px rgb(226, 218, 218);
+}
+
+.footer-elements {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    padding: 15px 0 15px 0;
+}
+
+.footer-elements :first-child {
+    font-size: 14px;
+    font-weight: 600;
+    color: #788898;
+}
+
+.footer-elements :last-child {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1274c0;
+}
